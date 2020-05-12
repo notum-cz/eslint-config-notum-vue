@@ -22,6 +22,7 @@ module.exports = {
     'prettier'
   ],
   rules: {
-    "prettier/prettier": "error"
+    "prettier/prettier": "error",
+    "import/resolver": "webpack"
   },
 };

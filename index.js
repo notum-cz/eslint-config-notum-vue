@@ -19,7 +19,8 @@ module.exports = {
   },
   plugins: [
     'vue',
-    'prettier'
+    'prettier',
+    'spellcheck'
   ],
   rules: {
     "prettier/prettier": "error",
@@ -40,5 +41,10 @@ module.exports = {
         ]
       }
     ],
+    "spellcheck/spell-checker": ["warn"],
+    "complexity": ["warn", 5],
+    "max-depth": ["warn", 4],
+    "max-nested-callbacks": ["warn", 3],
+    "max-params": ["warn", 3]
   },
 };
